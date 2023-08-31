@@ -1,0 +1,18 @@
+section#landing{
+  height: 100vh;
+  background: linear-gradient(to right bottom, #387952, #112120);
+  position: relative;
+  &::after{
+    content: ' ';
+    position: absolute;
+    background-image: url('../images/section-landing/border-line.svg');
+    height: 203px;
+    width: 100%;
+    background-size: cover;
+    left: 0;
+    bottom: 0;
+  }
+}
+a{
+  text-decoration: none;
+}
