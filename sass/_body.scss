@@ -1,7 +1,9 @@
 section#landing{
-  height: 100vh;
   background: linear-gradient(to right bottom, #387952, #112120);
   position: relative;
+  button{
+    border: none;
+  }
   &::after{
     content: ' ';
     position: absolute;

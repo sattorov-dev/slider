@@ -1,0 +1,59 @@
+$section-hero-color: #fff;
+
+section.hero{
+  font-family: 'Poppins';
+  color: $section-hero-color;
+  overflow: hidden;
+
+  .hero__second img{
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    height: auto;
+    width: 1154px;
+    height: 1145px;
+    flex-shrink: 0;
+    background-size: cover;
+  }
+  .container{
+    display: flex;
+  }
+  // .card{
+
+  // }
+  .card{
+    &__button{
+      color: $section-hero-color;
+      &--light{
+        border-radius: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.25);
+        &{
+          padding: 11px 30px;
+        }
+      }
+      &--orange{
+        border-radius: 27px;
+        color: $section-hero-color;
+        font-weight: 600;
+        font-size: 25px;
+        background: linear-gradient(130deg, #FF7B4E 15.57%, #FF584E 95.03%);
+        &{
+          padding: 27px 48px;
+        }
+      }
+    }
+    &__title{
+      font-size: 55px;
+      font-weight: 600;
+      max-width: 603px;
+    }
+    &__comment{
+      &{opacity: .5;margin-top: 30px;margin-bottom: 68px;}
+      font-size: 25px;
+      font-weight: 500;
+      max-width: 519px;
+    }
+  }
+}

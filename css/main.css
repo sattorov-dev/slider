@@ -12,6 +12,10 @@ header .btm-line {
   height: 5px;
   opacity: 0;
 }
+header a {
+  text-decoration: none;
+  color: #fff;
+}
 
 header {
   font-family: "Poppins";
@@ -36,9 +40,6 @@ header .container ul {
   align-items: center;
   list-style: none;
   gap: 80px;
-}
-header .container ul li {
-  cursor: pointer;
 }
 header .container ul li:hover .btm-line {
   opacity: 1;
@@ -72,9 +73,11 @@ header .container .sign .sign__in {
   * 400, 500, 600, 700
 */
 section#landing {
-  height: 100vh;
   background: linear-gradient(to right bottom, #387952, #112120);
   position: relative;
+}
+section#landing button {
+  border: none;
 }
 section#landing::after {
   content: " ";
@@ -89,4 +92,56 @@ section#landing::after {
 
 a {
   text-decoration: none;
+}
+
+section.hero {
+  font-family: "Poppins";
+  color: #fff;
+  overflow: hidden;
+}
+section.hero .hero__second img {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-size: cover;
+}
+section.hero .container {
+  display: flex;
+}
+section.hero .card__button {
+  color: #fff;
+}
+section.hero .card__button--light {
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+section.hero .card__button--light {
+  padding: 11px 30px;
+}
+section.hero .card__button--orange {
+  border-radius: 27px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  background: linear-gradient(130deg, #FF7B4E 15.57%, #FF584E 95.03%);
+}
+section.hero .card__button--orange {
+  padding: 27px 48px;
+}
+section.hero .card__title {
+  font-size: 55px;
+  font-weight: 600;
+  max-width: 603px;
+}
+section.hero .card__comment {
+  font-size: 25px;
+  font-weight: 500;
+  max-width: 519px;
+}
+section.hero .card__comment {
+  opacity: 0.5;
+  margin-top: 30px;
+  margin-bottom: 68px;
 }/*# sourceMappingURL=main.css.map */
